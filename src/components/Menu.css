@@ -1,0 +1,44 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+
+  }
+  
+  .navlink1 {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color:rgba(38, 37, 37, 0.804);   
+    color: white;
+    padding: 7px 15px;
+    justify-content: center;
+    margin: auto;
+    border-bottom-left-radius: 5px;
+    transition: right 0.5s ease; /* Smooth transition */
+  }
+  
+  .navlink1 ul {
+    list-style: none;
+  }
+  
+  .navlink1 ul li {
+    padding: 7px 40px;
+    margin: 7px 0px;
+    border: 1px solid white;
+   
+  }
+  
+  .navlink1 ul li a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    align-items: center;
+  }
+  .navlink1 ul li:hover{
+    background-color: #F69301;
+    border-radius: 2px;
+  }
+ 
+  
+  
