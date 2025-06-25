@@ -1,4 +1,6 @@
 import React,{useState, useEffect} from "react";
+import NAVBAR from './Navbar.js';
+import IMG from './image1.jpeg'
 import About from './About.js';
 import Popularmovies from './Popularmovies.js';
 import Featureapp from './Featureapp.js'
@@ -13,7 +15,7 @@ const Home = ()=> {
             views: '567 view',
             date: 'Oct 2023',
             description: "In Istanbul's vibrant streets, one family's fate is shaken by love, secrets, and betrayal.",
-            img: 'Images/image1.jpeg',
+            img: IMG,
         },
         // Add more slides if needed
         {
@@ -21,14 +23,14 @@ const Home = ()=> {
             views: '320 views',
             date: 'Sep 2023',
             description: "A tale of courage and determination in the face of adversity.",
-            img: 'Images/image1.jpeg',
+            img: IMG,
         },
         {
             title: 'Final Chapter',
             views: '1,045 views',
             date: 'Aug 2023',
             description: "An epic conclusion to a saga of love and betrayal.",
-            img: 'Images/image1.jpeg',
+            img: IMG,
         }
         // { ... },
         // { ... }
@@ -54,6 +56,7 @@ const Home = ()=> {
     // const back = goToIndex }));code generates random [unique comnabe.""
     return(
 <>
+{/* <NAVBAR></NAVBAR> */}
 <div className="home-container">
 <div className="container1">
 
@@ -86,9 +89,8 @@ const Home = ()=> {
             <i className="fa-solid fa-chevron-right" id="forward" onClick={nextSlide}></i>
             </div>    </div>
                      <Seasons/> <Popularmovies/>
-                                   {/* <Featureapp/>*/}
-                         <About/>
-                         <Featureapp/>
+                             <Featureapp/>
+                          <About/>
                         
 </>);
 }
